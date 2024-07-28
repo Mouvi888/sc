@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="shortcut icon" href="site.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouvi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .text {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #333;
+            /* Initial color */
+            position: relative;
+            animation: color-change 2s infinite;
+        }
+        
+        @keyframes color-change {
+            0% {
+                color: #ffffcc;
+            }
+            25% {
+                color: #ff7e00;
+            }
+            50% {
+                color: #efd334;
+            }
+            75% {
+                color: #f7d263;
+            }
+            100% {
+                color: #ffff99;
+            }
+        }
+        
+        .button {
+            padding: 1rem 2rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #1ed2e3;
+            color: #1C1C1C;
+            border-radius: 0.5rem;
+            border: 2px solid #1ed2e3;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn {
+  /* Теперь это строчно-блочный элемент */  
+  display: inline-block; 
+  /* Серый цвет фона кнопки */
+  background: #8C959D; 
+  /* Белый цвет текста */
+  color: #fff; 
+  /* Отступы вокруг текста */
+  padding: 16px 32px; 
+  /* Убираем подчёркивание */
+  text-decoration: none; 
+  /* Скругляем уголки */
+  border-radius: 3px; 
+}
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-800 to-gray-900 text-gray-200">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-orange-500 to-red-500 py-6">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="https://mouvi.lol" class="flex items-center text-white font-bold text-xl">
+                <img src="https://mouvi.lol/site.png" alt="Mouvi" class="w-8 mr-2"> Mouvi
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-8 px-4">
+        <div class="text-center mb-12">
+            <p class="text">Полезные ссылки</p>
+        </div>
+
+        <section class="text-center mb-8">
+            <h2 class="mt-4">Сталкрафт статус: <a href="https://stalcraft-status.ru/ru" class="btn">stalcraft-status.ru</a></h2>
+            <h2 class="mt-4">Сталкрафт вики: <a href="https://stalcraft.wiki/" class="btn">stalcraft.wiki</a></h2>
+            <h2 class="mt-4">Интерактивная карта: <a href="https://stalcraft.wiki/maps" class="btn">stalcraft.wiki/maps</a></h2>
+            <h2 class="mt-4">Калькулятор сборок: <a href="https://stalcalc.ru/" class="btn">https://stalcalc.ru</a></h2>
+            <h2 class="mt-4">Форум exbo(сталкрафта): <a href="https://forum.exbo.net/" class="btn">forum.exbo.net</a></h2>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 mt-8">
+        <p class="text-gray-600">© 2024 by mouvi.rework. Все права защищены.</p>
+        <p class="text-sm text-gray-600">Все вопросы по почте - <a href="mailto:help@mouvi.lol" class="underline">help@mouvi.lol</a></p>
+    </footer>
+
+    <!-- JavaScript for Counter -->
+    <script>
+        let count = 0;
+
+        function increaseCount() {
+            count++;
+            document.getElementById("count").textContent = count;
+        }
+    </script>
+</body>
+
+</html>
